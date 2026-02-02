@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gigya Form Auto-filler",
+  "version": "1.0",
+  "description": "Auto-fill Gigya forms with default values",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Fill Gigya Form"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
