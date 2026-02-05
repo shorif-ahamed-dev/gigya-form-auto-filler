@@ -18,7 +18,7 @@ async function fillGigyaForm() {
       );
       const data = await response.json();
       return data;
-    } catch (error) {}
+    } catch (error) { }
   }
 
   // Get data from API
@@ -91,10 +91,6 @@ async function fillGigyaForm() {
   // Wait for postal code field to appear, fill it, then submit
   setTimeout(() => {
     fillInput('input[name="profile.zip"]', defaults.postalCode);
-    // Submit the form after everything is filled
-    // setTimeout(() => {
-    //   clickSubmit();
-    // }, 500);
     fetch("http://localhost:3000/api/update-status", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
