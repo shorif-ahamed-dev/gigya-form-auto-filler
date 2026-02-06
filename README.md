@@ -15,4 +15,4 @@ A Chrome extension that automatically fills form fields with default values when
 `firstName`: Grill
 `lastName` : Calmest
 `country`: USA
-`postalCode` : 90277
+`postalCode` : 21254
